@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Voting Application</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="contract_abi.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Voting Application</h1>
+    <button onclick="connectMetaMask()">Connect MetaMask</button>
+    <p id="walletAddress"></p>
+    <hr>
+    <h2>Cast Your Vote</h2>
+    <label for="candidateInput">Candidate:</label>
+    <input type="text" id="candidateInput">
+    <button onclick="voteForCandidate()">Vote</button>
+    <hr>
+    <h2>Get Vote Count</h2>
+    <label for="candidateCountInput">Candidate:</label>
+    <input type="text" id="candidateCountInput">
+    <button onclick="getVoteCount()">Get Vote Count</button>
+    <p id="voteCount"></p>
+
+</body>
+
+</html>
