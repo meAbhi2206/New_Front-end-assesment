@@ -17,6 +17,28 @@ The project consists of three main components:
 
 ### Prerequisites
 - MetaMask browser extension
+  
+### Executing Program
+To run the solidity code, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+
+Steps to interact with the contract using Remix:
+
+1. Open the contract file in Remix IDE.
+2. Select the appropriate compiler version.
+3. Compile the contract.
+4. Click on the "Deploy & Run Transactions" tab in the Remix editor. From the "Environment" dropdown, select the desired development       
+   environment (Injected Web3).
+5. Ensure that you have the contract deployed
+6. Provide the correct contract address in the frontend code `(<Your Contract Address>)`
+   
+   ```
+   const createContractInstance = () => {
+      const contractAddress = '<Your Contract Address>'; //write deployed contract address
+      const contract = new web3.eth.Contract(contractABI, contractAddress);
+      return contract;
+    };
+   ```
+
 
 ### Installation
 1. Clone the repository or download the source code files.
